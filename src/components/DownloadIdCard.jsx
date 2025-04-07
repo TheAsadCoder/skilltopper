@@ -101,7 +101,7 @@ const DownloadIdCard = () => {
         ) : (
           <button
             type="submit"
-            className="w-full bg-blue-600 cursor-pointer text-white p-2 rounded-lg"
+            className="w-full bg-[#4f38df] cursor-pointer text-white p-2 rounded-lg"
           >
             {loading ? "Please wait..." : "Submit"}
           </button>
