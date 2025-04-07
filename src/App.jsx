@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import RegisterPage from "./pages/RegisterPage";
 import DownloadIdCardPage from "./pages/DownloadIdCardPage";
 import ResultsPage from "./pages/ResultsPage";
-import AdminSignupPage from "./pages/adminSignupPage";
+import AdminSignupPage from "./pages/AdminSignupPage";
 import VerifyAdminPage from "./pages/VerifyAdminPage";
 import AllStudentsDataPage from "./pages/AllStudentsDataPage";
 import AdminLoginPage from "./pages/AdminLoginPage";
