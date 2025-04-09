@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -112,6 +114,10 @@ const Register = () => {
   return (
     <>
     <div className="max-w-3xl mx-auto bg-gray-800 shadow-2xl radius-bottom overflow-hidden">
+      <Link to="/course-details"><button className="py-2 w-full bg-gray-600 flex items-center justify-center gap-2.5 text-white border border-[#4f38df] text-[14px] sm:text-[15px] font-bold shad">Course Details
+        <span className="arrow"><FaArrowRightLong /></span>
+      </button>
+      </Link>
       <div className="p-5 md:p-8">
         <form className="space-y-6" onSubmit={handleSubmit}>
           {/* Profile Picture Upload */}
@@ -342,6 +348,9 @@ const Register = () => {
                     </p>
                     <p className="text-md text-gray-500 font-bold dark:text-gray-400 underline text-center">
                       Payment Screenshot
+                    </p>
+                    <p className="text-md text-gray-400 font-bold text-center">
+                      Fees: 3,500
                     </p>
                   </div>
                 )}

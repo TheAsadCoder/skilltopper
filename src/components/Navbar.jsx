@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="max-w-3xl h-[220px] overflow-hidden mx-auto border-b-1 border-white bg-red-300 relative radius-top">
+    <div className="max-w-3xl h-[220px] overflow-hidden mx-auto border-b-1 border-white bg-gray-700 relative radius-top">
       <img
         src="bg.png"
         alt="background"
@@ -60,6 +60,7 @@ const Navbar = () => {
             </a>
           </div>
         </div>
+
 
         <div className="absolute text-[13px] sm:text-[16px] flex justify-between  radius-top bottom-0  gap-1 rd  bg-[#2f2f2f]">
           <NavLink to="/">

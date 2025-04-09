@@ -58,3 +58,32 @@ body {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
+
+.shad {
+  box-shadow: 0 0 10px #4f38df;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+}
+
+.shad:hover {
+  box-shadow: 0 0 20px #cecece;
+  background-color: #4f38df;
+  transition: all 0.3s ease;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  .arrow {
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+  }
+}
+
+.btn-shadow {
+  box-shadow: 0 0 10px #4f38df;
+}
+
+.btn-shadow:hover {
+  box-shadow: 0 0 20px #4f38df;
+  transition: all 0.3s ease;
+}
+

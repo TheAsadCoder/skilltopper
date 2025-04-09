@@ -10,7 +10,7 @@ const AdminLogin = () => {
     password: ""
   });
 
- const {adminId, setAdminId} = useProvider();
+ const {adminId, setAdminId, setIsAuthenticated} = useProvider();
  
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -34,7 +34,7 @@ const AdminLogin = () => {
 
       if (response.data.success) {
         toast.success(response.data.message);
-        
+        setIsAuthenticated(true);
         setAdminId(response.data.id)
 
         setFormData({
