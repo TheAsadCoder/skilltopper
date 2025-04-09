@@ -93,7 +93,6 @@ const Register = () => {
         });
       }
     } catch (err) {
-      console.error('err', err);
       setLoading(true);
       if (err.response.data) {
 
