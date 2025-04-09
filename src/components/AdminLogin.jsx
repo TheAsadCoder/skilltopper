@@ -30,7 +30,6 @@ const AdminLogin = () => {
         `${import.meta.env.VITE_BACKEND_URL}/api/admin/login`,
         formData,
       );
-      console.log("res", response);
 
       if (response.data.success) {
         toast.success(response.data.message);
