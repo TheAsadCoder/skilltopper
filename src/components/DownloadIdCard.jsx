@@ -123,7 +123,7 @@ const DownloadIdCard = () => {
               <div className="flex absolute items-center  gap-5 top-[55%] left-[7%]">
                 <div className="w-[109px] rounded-sm h-[109px] p-1 border-2 border-blue-600 overflow-hidden">
                   <img
-                    src={studentData.img}
+                    src={studentData.img ? studentData.img : "./user-logo.png"}
                     alt="Student"
                     className="w-full h-full rounded-sm cover border-2 cover border-black"
                   />
