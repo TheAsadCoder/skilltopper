@@ -9,6 +9,7 @@ import AllStudentsDataPage from "./pages/AllStudentsDataPage";
 import AdminLoginPage from "./pages/AdminLoginPage";
 import { useProvider } from "./context/AuthContext";
 import CourseDetailsPage from "./pages/CourseDetailsPage";
+import PageNotFoundPage from "./pages/PageNotFoundPage";
 
 const App = () => {
   const { isAuthenticated } = useProvider();
@@ -29,6 +30,7 @@ const App = () => {
      element={isAuthenticated ? <AllStudentsDataPage /> : <Navigate to="/admin-login" />}
    />
 
+      <Route path="*" element={<PageNotFoundPage />} />
    
     </Routes>
   );
